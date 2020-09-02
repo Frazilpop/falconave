@@ -14,9 +14,51 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
 <link href="https://fonts.googleapis.com/css?family=Lusitana&display=swap" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149487950-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149487950-3');
+</script>
+
 </head>
 <body>
 <!--#endregion-->
+
+<style>
+
+.spotify-logo {
+    background: url("images/spotify-logo.svg" ) no-repeat center;
+}
+.spotify-logo:hover {
+    background: url("images/spotify-logo_hover.svg" ) no-repeat center;
+}
+.apple-music-logo {
+    background: url("images/apple-music-logo.svg" ) no-repeat center;
+
+}
+.apple-music-logo:hover {
+    background: url("images/apple-music-logo_hover.svg" ) no-repeat center;
+}
+.bandcamp-logo {
+    background: url("images/bandcamp-logo.svg" ) no-repeat center;
+}
+.bandcamp-logo:hover {
+    background: url("images/bandcamp-logo_hover.svg" ) no-repeat center;
+}
+.s-logo {
+    width:120px;
+    height: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    max-width: 100%;
+
+}
+</style>
 
 <!--#region nav-left-->
 <div id="wrapper">
@@ -42,13 +84,16 @@
 </div>
 <!-- #endregion logo -->
 
+<!-- #region streaming logo set -->
 <div class="center-image logo-set-container">
 
-<a class="logo-inline" href="https://open.spotify.com/artist/5zsmyzwCTl82Kbx8uBtuce?si=0bS9t4ybQgC591l7GoxjDw/"><img class="logo-display" src="images/spotify-logo.svg" alt="Spotify Logo" /></a>
-<a class="logo-inline" href="https://music.apple.com/sg/artist/falcon-ave/1481099806/"><img class="logo-display" src="images/apple-music-logo.svg" alt="Apple Music Logo" /></a>
-<a class="logo-inline" href="https://falconave.bandcamp.com/"><img class="logo-display" src="images/bandcamp-logo.svg" alt="Bandcamp Logo" /></a>
-
+    <a class="logo-inline" href="https://open.spotify.com/artist/5zsmyzwCTl82Kbx8uBtuce?si=0bS9t4ybQgC591l7GoxjDw/"><div class="logo-display spotify-logo s-logo"  alt="Spotify Logo"> </div></a>
+    <a class="logo-inline" href="https://music.apple.com/sg/artist/falcon-ave/1481099806/"><div class="logo-display apple-music-logo s-logo" alt="Apple Music Logo"> </div></a>
+    <a class="logo-inline" href="https://falconave.bandcamp.com/"><div class="logo-display bandcamp-logo s-logo" alt="Bandcamp Logo" > </div></a>
+    
 </div>
+<!-- #endregion streaming logo set -->
+
 
 <!--
 <div class="center-image logo-set-container">
