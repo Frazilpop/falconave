@@ -432,19 +432,33 @@ header {
 .quote-attribution {
     padding-top: 20px;
 }
-.logo-block {
+.logo-inline {
     display: inline-block;
-    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;;
     max-height: 40px;
+    max-width: 130px;
+    cursor: pointer;
+}
+.logo-display {
+    max-height: 40px;
+    max-width: 130px;
+    cursor: pointer;
 
+}
+.logo-block {
+    max-width: 130px;
+    max-height: 40px;
     margin-left: auto;
     margin-right: auto;
 
 }
 .logo-set-container {
-    display: flex;
-    max-width: 460px;
+    display: block;
+    max-width: 55%;
     padding-bottom: 30px;
+    text-align: center;
 }
 @media (max-width: 767px) {
     .quote-attribution {
@@ -481,6 +495,16 @@ header {
     .logo-set-container {
         display: block;
     }
+    .logo-inline {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .logo-display {
+        max-width: inherit;
+        max-height: inherit;
+    }
+
 }
 .padding-bottom-5 {
     padding-bottom: 5px;
