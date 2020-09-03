@@ -1,0 +1,32 @@
+.spotify-logo {
+    background: url("images/spotify-logo.svg" ) no-repeat center;
+}
+.spotify-logo:hover {
+    background: url("images/spotify-logo_hover.svg" ) no-repeat center;
+}
+.apple-music-logo {
+    background: url("images/apple-music-logo.svg" ) no-repeat center;
+
+}
+.apple-music-logo:hover {
+    background: url("images/apple-music-logo_hover.svg" ) no-repeat center;
+}
+.bandcamp-logo {
+    background: url("images/bandcamp-logo.svg" ) no-repeat center;
+}
+.bandcamp-logo:hover {
+    background: url("images/bandcamp-logo_hover.svg" ) no-repeat center;
+}
+
+body:after{
+    display:none;
+    content: url("images/spotify-logo_hover.svg") url("images/apple-music-logo_hover.svg" ) url("images/bandcamp-logo_hover.svg" );
+}
+.s-logo {
+    width:120px;
+    height: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    max-width: 100%;
+}

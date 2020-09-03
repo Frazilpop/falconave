@@ -6,9 +6,11 @@
 <title>Falcon Ave.</title>
 <link rel="stylesheet" type= "text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
 <link rel="stylesheet" type= "text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type= "text/css" href= "style.css" />
 <link rel="stylesheet" type= "text/css" href= "fonts.css" />
 <link rel="stylesheet" type= "text/css" href= "nav.css" />
+<link rel="stylesheet" type= "text/css" href= "FA.css" />
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script> 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -28,43 +30,6 @@
 <body>
 <!--#endregion-->
 
-<style>
-
-.spotify-logo {
-    background: url("images/spotify-logo.svg" ) no-repeat center;
-}
-.spotify-logo:hover {
-    background: url("images/spotify-logo_hover.svg" ) no-repeat center;
-}
-.apple-music-logo {
-    background: url("images/apple-music-logo.svg" ) no-repeat center;
-
-}
-.apple-music-logo:hover {
-    background: url("images/apple-music-logo_hover.svg" ) no-repeat center;
-}
-.bandcamp-logo {
-    background: url("images/bandcamp-logo.svg" ) no-repeat center;
-}
-.bandcamp-logo:hover {
-    background: url("images/bandcamp-logo_hover.svg" ) no-repeat center;
-}
-
-body:after{
-    display:none;
-    content: url("images/spotify-logo_hover.svg") url("images/apple-music-logo_hover.svg" ) url("images/bandcamp-logo_hover.svg" );
-}
-.s-logo {
-    width:120px;
-    height: 40px;
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-    max-width: 100%;
-
-}
-</style>
-
 <!--#region nav-left-->
 <div id="wrapper">
 <div id="sidebar-wrapper">
@@ -73,8 +38,6 @@ body:after{
 <li> <a href="index.html">Home</a></li>
 <li> <a href="gallery.html">Gallery</a></li>
 <li> <a href="contact.html">Contact</a></li>
-
-
 </ul>
 </div>
 </div>
@@ -85,7 +48,9 @@ body:after{
 
 <!-- #region logo -->
 <div class="SVG-logo">
+    <a href="index.html">
     <img class="center-image feature-logo-large logo-padding fa-logo-offset" src="images/logo.svg" alt="" />
+    </a>
 </div>
 <!-- #endregion logo -->
 
@@ -100,32 +65,6 @@ body:after{
 <!-- #endregion streaming logo set -->
 
 
-<!--
-<div class="center-image logo-set-container">
-        <a class="logo-set-container" href="https://open.spotify.com/artist/5zsmyzwCTl82Kbx8uBtuce?si=0bS9t4ybQgC591l7GoxjDw">
-        <div class="logo-flex">
-
-            <img class="" src="images/spotify-logo.svg" alt="Spotify Logo" />
-        </span>
-
-        </a>
-
-        <a href="https://music.apple.com/sg/artist/falcon-ave/1481099806">
-        <span class="logo-flex">
-        <img class="" src="images/apple-music-logo.svg" alt="Apple Music Logo" />
-        </span>
-        </a>
-        
-    <span class="logo-flex"></span>
-        <a href="https://falconave.bandcamp.com/"><img class="" src="images/bandcamp-logo.svg" alt="Bandcamp Logo" /></a>
-    </span>
-    <span class="logo-flex"></span>
-
-</span>
-
-</div>
--->
-
 <!-- #region text block -->
 <div class="text-block padding-bottom-20 align-center">
     <!--&-->
@@ -134,34 +73,30 @@ body:after{
 </div>
 <!-- #endregion text block -->
 
-
-<!-- #region DET promo -->
-<div class="padded-container">
-    <div class="center-image feature-image-550 drop-shadow">
-        <a href="grids.html">
-        <img class="" src="images/FA-DET-web.jpg" alt="" />
-        </a>
-        <div class="padding-top-r display-inline-block"></div>
-        <span class="grid-name display-inline-block ">Fig. I – Dead End Town by Falcon Ave.
-            <br><br>
-            <strong>1.</strong> <span class="italic">Dead End Town</span><br>
-            <strong>2.</strong> <span class="italic">Where are my Shoes?</span>
-        </span>
-        <div class="padding-bottom-10"></div>
-        <div class="inline-button-container padding-top-r padding-bottom-25" >
-        <div class="align-center display-inline-block button-rh mobile-block-button">
-      <!--  <a href="grids.html" class="no-decoration">
-        <div class="home-button inline-button">
-                Listen Now
+<!--$$-->
+<!--^-->
+<div class="p-2">
+    <article class="">
+    <!-- #region promo -->
+    <div class="padded-container">
+        <div class="center-image feature-image-550 drop-shadow">
+            <a href="external-url.html"><img class="" src="images/FA-DET-web.jpg" alt="Dead End Town by Falcon Ave." /></a>
+            <span class="grid-name display-inline-block padding-top-15">Fig. I – Dead End Town by Falcon Ave.
+                 <br><br>
+                <strong>1.</strong> <span class="italic">Dead End Town</span><br><strong>2.</strong> <span class="italic">Where are my Shoes?</span>
+            </span>
+            <div class="inline-button-container padding-top-25 padding-bottom-25" >
+                <div class="align-center display-inline-block button-rh mobile-block-button">
+                    Coming September 14th
+                </div>
+            </div>
         </div>
-        </a>-->
-        Coming September 14th
-        </div>
-
     </div>
+    <!-- #endregion promo -->
+    </article>                        
 </div>
-</div>
-<!-- #endregion -->
+<!--^-->
+<!--$$-->
 
 <div class="padding-top padding-bottom-20"></div>
 
@@ -173,33 +108,39 @@ body:after{
 </div>
 <!-- #endregion text block -->
 
-<!-- #region DET promo -->
-<div class="padded-container">
-    <div class="center-image feature-image-550 drop-shadow">
-        <a href="grids.html">
-        <img class="" src="images/FA-Daughter-web.jpg" alt="" />
-        </a>
-        <div class="padding-top-r display-inline-block"></div>
-        <span class="grid-name display-inline-block ">Falcon Ave. on Bring Your Daughter to Work Day
-            <br><br>
-            <strong>1.</strong> <span class="italic">Satan in a Jar (Short)</span><br>
-            <strong>2.</strong> <span class="italic">Bring Your Daughter to Work Day</span>
-        </span>
-        <div class="padding-bottom-10"></div>
-        <div class="inline-button-container padding-top-r padding-bottom-25" >
-        <div class="align-center display-inline-block button-rh mobile-block-button">
-        <a href="https://album.link/gb/i/1481099805" class="no-decoration">
-        <div class="home-button inline-button">
-                Listen Now
+<!-- #region Flex Grid -->
+<div class="d-flex flex-wrap justify-content-center">
+
+<!--$-->
+<!--^-->
+<div class="p-2">
+    <article class="">
+    <!-- #region promo -->
+    <div class="padded-container">
+        <div class="center-image feature-image-550 drop-shadow">
+            <a href="https://album.link/gb/i/1481099805"><img class="" src="images/FA-Daughter-web.jpg" alt="Bring Your Daughter to Work Day by Falcon Ave." /></a>
+            <span class="grid-name display-inline-block padding-top-15">Falcon Ave. on Bring Your Daughter to Work Day
+                 <br><br>
+                <strong>1.</strong> <span class="italic">Satan in a Jar (Short)</span><br><strong>2.</strong> <span class="italic">Bring Your Daughter to Work Day</span>
+            </span>
+            <div class="inline-button-container padding-top-25 padding-bottom-25" >
+                <div class="align-center display-inline-block button-rh mobile-block-button">
+                <a href="https://album.link/gb/i/1481099805" class="no-decoration"><div class="home-button inline-button">Listen Now</div></a>
+                </div>
+            </div>
         </div>
-        </a>
-        </div>
-</div>
     </div>
+    <!-- #endregion promo -->
+    </article>                        
 </div>
-<!-- #endregion -->
+<!--^-->
+<!--$-->
 
 </div>
+<!-- #endregion Flex Grid -->
+
+
+
 
 <!--*F-->
 
