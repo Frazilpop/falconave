@@ -19,7 +19,7 @@
 }
 
 body:after{
-    display:none;
+    position: absolute; overflow: hidden; left: -50000px; content: 
     content: url("images/spotify-logo_hover.svg") url("images/apple-music-logo_hover.svg" ) url("images/bandcamp-logo_hover.svg" );
 }
 .s-logo {
