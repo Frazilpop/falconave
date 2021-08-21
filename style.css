@@ -22,8 +22,54 @@ a {
 }
 .italic {
     font-family: 'futura_lt_btlight_italic', Arial, Helvetica, sans-serif;
-
 }
+.sj-dialog-0 .dialog-msg-0 {
+    font-family: 'futura_lt_btlight', Arial, Helvetica, sans-serif !important;
+}
+.additional-info-0 {
+    display: none !important;
+}
+.button-0 {
+    font-family: 'futura_lt_btlight', Arial, Helvetica, sans-serif !important;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 16px 10px;
+    background: transparent;
+    border: 1px solid #172022;
+    text-align: center;
+    color: #172022;
+    text-decoration: none;
+    cursor:pointer;
+    border-radius: 4px;
+}
+.sj-dialog--1691395329 .dialog-msg--1691395329 {
+    font-family: 'futura_lt_btlight', Arial, Helvetica, sans-serif !important;
+}
+.additional-info--1691395329 {
+    display: none !important;
+}
+.button--1691395329 {
+    font-family: 'futura_lt_btlight', Arial, Helvetica, sans-serif !important;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 16px 10px;
+    background: transparent;
+    border: 1px solid #172022;
+    text-align: center;
+    color: #172022;
+    text-decoration: none;
+    cursor:pointer;
+    border-radius: 4px;
+}
+
 hr {
     border-top: .1px solid #d3d3d336 !important;
     margin: 22px 30px;
@@ -1722,10 +1768,21 @@ p {
   }
   .image-spacer {
     padding-top: 30%;
+    }
+    .block-with-image {
+        min-height: inherit !important;
+
+    }
+  
+
 }
 
-
+@media (max-width:720px) {
+    .logo-padding-sticky {
+        padding-top: 45px;
+    }
 }
+
 
 .no-margin-top {
     margin-top: 0px !important;
@@ -1733,4 +1790,15 @@ p {
 
 .no-outline {
     border: initial!important;
+}
+
+.software-promo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.indent-block {
+    margin-left: 40px;
+}
+.subtitle {
+    padding-bottom: 25px;
 }
