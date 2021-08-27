@@ -538,7 +538,7 @@ header {
     padding-top: 15px;
 }
 .padding-top-25 {
-    padding-top: 25px;
+    padding-top: 25px !important;
 }
 .padding-top-reduced {
     padding-top: 20px;
@@ -1801,4 +1801,7 @@ p {
 }
 .subtitle {
     padding-bottom: 25px;
+}
+h3 {
+    margin-top: 0px !important;
 }
