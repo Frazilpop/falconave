@@ -30,3 +30,6 @@ body:after{
     display:block;
     max-width: 100%;
 }
+.fa-logo-offset {
+    overflow: hidden;
+}
