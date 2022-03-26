@@ -34,25 +34,30 @@ body:after{
     overflow: hidden;
     overflow-x: hidden;
 }
-.padding-release {
-    padding-bottom: 50px;
-}
+
 .padding-footer {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+.hidden-item-p {
+    padding-bottom: 22.5px;
+}
+.p-2 {
+    margin-bottom: 50px!important;
+}    
+.padding-release {
+    padding-bottom: 0px;
 }
 @media(max-width: 1200px) {
-    .p-2 {
-        margin-bottom: 50px!important;
-    }    
-    .padding-release {
-        padding-bottom: 0px;
-    }
+   
     .padding-footer {
         padding-bottom: 0px;
     }
-
     .fa-logo-offset {
 
         max-width: 100vw;
+    }
+
+    .hidden-item-p {
+        padding-bottom: 0px;
     }
 }
