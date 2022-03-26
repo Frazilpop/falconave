@@ -30,6 +30,25 @@ body:after{
     display:block;
     max-width: 100%;
 }
-.fa-logo-offset {
-    overflow: hidden;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.padding-release {
+    padding-bottom: 50px;
+}
+.padding-footer {
+    padding-bottom: 50px;
+}
+@media(max-width: 1200px) {
+    .p-2 {
+        margin-bottom: 50px!important;
+    }    
+    .padding-release {
+        padding-bottom: 0px;
+    }
+    .padding-footer {
+        padding-bottom: 0px;
+    }
 }
