@@ -18,9 +18,34 @@
     background: url("images/bandcamp-logo_hover.svg" ) no-repeat center;
 }
 
+.amazon-logo {
+    background: url("images/amazon-logo.svg" ) no-repeat center;
+}
+.amazon-logo:hover {
+    background: url("images/amazon-logo_hover.svg" ) no-repeat center;
+}
+.deezer-logo {
+    background: url("images/deezer-logo.svg" ) no-repeat center;
+}
+.deezer-logo:hover {
+    background: url("images/deezer-logo_hover.svg" ) no-repeat center;
+}
+.youtube-logo {
+    background: url("images/youtube-logo.svg" ) no-repeat center;
+}
+.youtube-logo:hover {
+    background: url("images/youtube-logo_hover.svg" ) no-repeat center;
+}
+.tidal-logo {
+    background: url("images/tidal-logo.svg" ) no-repeat center;
+}
+.tidal-logo:hover {
+    background: url("images/tidal-logo_hover.svg" ) no-repeat center;
+}
+
 body:after{
     position: absolute; overflow: hidden; left: -50000px;
-    content: url("images/spotify-logo_hover.svg") url("images/apple-music-logo_hover.svg" ) url("images/bandcamp-logo_hover.svg" );
+    content: url("images/spotify-logo_hover.svg") url("images/apple-music-logo_hover.svg" ) url("images/bandcamp-logo_hover.svg" )  url("images/amazon-logo_hover.svg") url("images/deezer-logo_hover.svg" ) url("images/youtube-logo_hover.svg" ) url("images/tidal-logo_hover.svg" );
 }
 .s-logo {
     width:120px;
@@ -34,7 +59,6 @@ body:after{
     overflow: hidden;
     overflow-x: hidden;
 }
-
 .padding-footer {
     padding-bottom: 30px;
 }
@@ -47,18 +71,26 @@ body:after{
 .padding-release {
     padding-bottom: 0px;
 }
+
 @media(max-width: 1200px) {
    
     .padding-footer {
         padding-bottom: 0px;
     }
-    .fa-logo-offset {
-
-        max-width: 100vw;
-    }
 
     .hidden-item-p {
         padding-bottom: 0px;
+    }
+}
+
+.padding-top-feature {
+    padding-top: 20px;
+}
+
+@media(min-width:480px) {
+
+    .padding-top-feature {
+        padding-top: 25px;
     }
 }
 
@@ -69,6 +101,11 @@ body:after{
     margin-top: 15px;
     width: 50%;
   }
+
+  .dsp-logo-feature-alt-margin-top {
+    margin-top: 7px;
+  }
+
   .m-logo {
     width: 168px;
     height: 56px;
@@ -78,27 +115,44 @@ body:after{
     max-width: 100%;
   }
 
+
+  .f-logo {
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+  }
+
   @media(min-width:400px) {
+
     .feature-image-400 {
         max-width: 400px;
     }
+    .basic-footer {
+        padding: 10px 10px 8px 15px;
+        color: rgba(44, 41, 41, 0.651);
+        font-weight: 200;
+        font-size: .8rem;
+    }
 
-
-.basic-footer {
-    padding: 10px 10px 8px 15px;
-    color: rgba(44, 41, 41, 0.651);
-    font-weight: 200;
-    font-size: .8rem;
+    .listen-on {
+        max-width: 790px;
+        line-height: 1.45rem;
+        font-size: 100%;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .listen-on {
-    padding: 0px 0px;
-  padding-bottom: 0px;
-max-width: 790px;
-line-height: 1.45rem;
-font-size: 100%;
-font-size: 1rem;
-margin-left: auto;
-margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
+
+
+.padding-top-release-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
