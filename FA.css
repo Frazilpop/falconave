@@ -92,6 +92,8 @@ body:after{
     .padding-top-feature {
         padding-top: 25px;
     }
+
+    
 }
 
 .dsp-logo-feature {
@@ -160,4 +162,14 @@ body:after{
 body {
     max-width: 100%;
     overflow-x: hidden !important;
+}
+.SVG-logo {
+    overflow-x: hidden !important;
+
+}
+
+@media(max-width:480px) {
+    .feature-logo-large {
+        max-width: 480px;
+      }
 }
