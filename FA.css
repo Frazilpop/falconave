@@ -57,7 +57,7 @@ body:after{
 }
 .fa-logo-offset {
     overflow: hidden;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .padding-footer {
     padding-bottom: 30px;
@@ -155,4 +155,9 @@ body:after{
 .padding-top-release-title {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden !important;
 }
