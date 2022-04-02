@@ -171,12 +171,9 @@ body {
 @media(max-width:480px) {
     .feature-logo-large {
         max-width: 480px;
-        position: absolute;
         overflow-x: hidden !important;
 
       }
 
-      .feature-logo-large-after {
-          margin-bottom: 160px;
-      }
+     
 }
