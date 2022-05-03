@@ -165,15 +165,10 @@ body {
 }
 .SVG-logo {
     overflow-x: hidden !important;
-
 }
-
 @media(max-width:480px) {
     .feature-logo-large {
         max-width: 480px;
         overflow-x: hidden !important;
-
       }
-
-     
 }
