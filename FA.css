@@ -172,3 +172,6 @@ body {
         overflow-x: hidden !important;
       }
 }
+.small-spacer {
+    padding-top: 15px;
+}
