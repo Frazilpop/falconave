@@ -67,9 +67,57 @@ body:after{
 }
 .p-2 {
     margin-bottom: 50px!important;
-}    
+}
 .padding-release {
     padding-bottom: 0px;
+}
+
+/* Releases grid: single column on mobile, smaller multi-column tiles on desktop.
+   Capped container width keeps the tiles clustered together on wide screens. */
+.releases-grid {
+    padding-top: 30px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.releases-grid .p-2 {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 45px!important;
+}
+.releases-grid .padded-container {
+    padding: 0px 18px;
+}
+.releases-grid .inline-button-container {
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Chain flex down to the tile so every tile in a row stretches to the same
+   height, with the button pinned to the bottom edge */
+.releases-grid article,
+.releases-grid .padded-container,
+.releases-grid .drop-shadow {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .releases-grid .p-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .releases-grid .p-2 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
 }
 
 @media(max-width: 1200px) {
